@@ -76,7 +76,7 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/73747693b553b6e8e5f21.mp4")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/d10c3579c91a40c471b58.mp4")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
@@ -135,4 +135,4 @@ if PING_IMG_URL:
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://te.legra.ph/file/73747693b553b6e8e5f21.mp4"
+            START_IMG_URL = "https://te.legra.ph/file/d10c3579c91a40c471b58.mp4"
