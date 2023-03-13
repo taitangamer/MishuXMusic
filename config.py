@@ -80,7 +80,7 @@ START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/73747693b553b6
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://te.legra.ph/file/6a8c15ee8d0792be3e6b4.jpg",
+    "https://te.legra.ph/file/73747693b553b6e8e5f21.mp4",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/8620c97102de9537c0f6a.jpg"
@@ -130,7 +130,7 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://te.legra.ph/file/6a8c15ee8d0792be3e6b4.jpg"
+            PING_IMG_URL = "https://te.legra.ph/file/73747693b553b6e8e5f21.mp4"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
