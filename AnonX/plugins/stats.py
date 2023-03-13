@@ -6,7 +6,7 @@ import psutil
 from pyrogram import __version__ as pyrover
 from pyrogram import filters
 from pyrogram.errors import MessageIdInvalid
-from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
+from pyrogram.types import CallbackQuery, InputMediaAnimation, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
@@ -289,14 +289,14 @@ async def overall_stats(client, CallbackQuery, _):
 **ᴅᴏᴡɴʟᴏᴀᴅ ʟɪᴍɪᴛ:** {song} ᴍɪɴᴜᴛᴇs
 **ᴩʟᴀʏʟɪsᴛ ʟɪᴍɪᴛ:** {playlist_limit}
 **ᴩʟᴀʏʟɪsᴛ ᴩʟᴀʏ ʟɪᴍɪᴛ:** {fetch_playlist}"""
-    med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
+    med = InputMediaAnimation(media=config.STATS_IMG_URL, caption=text)
     try:
         await CallbackQuery.edit_message_media(
             media=med, reply_markup=upl
         )
     except MessageIdInvalid:
-        await CallbackQuery.message.reply_photo(
-            photo=config.STATS_IMG_URL, caption=text, reply_markup=upl
+        await CallbackQuery.message.reply_animation(
+            animation=config.STATS_IMG_URL, caption=text, reply_markup=upl
         )
 
 
@@ -398,8 +398,8 @@ async def overall_stats(client, CallbackQuery, _):
             media=med, reply_markup=upl
         )
     except MessageIdInvalid:
-        await CallbackQuery.message.reply_photo(
-            photo=config.STATS_IMG_URL, caption=text, reply_markup=upl
+        await CallbackQuery.message.reply_animation(
+            animation=config.STATS_IMG_URL, caption=text, reply_markup=upl
         )
 
 
