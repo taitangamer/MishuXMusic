@@ -392,7 +392,7 @@ async def overall_stats(client, CallbackQuery, _):
 **ǫᴜᴇʀɪᴇs:** `{query}`
 **ʙᴏᴛ ǫᴜᴇʀɪᴇs:** `{total_queries} `
     """
-    med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
+    med = InputMediaAnimation(media=config.STATS_IMG_URL, caption=text)
     try:
         await CallbackQuery.edit_message_media(
             media=med, reply_markup=upl
@@ -435,7 +435,7 @@ async def back_buttons(client, CallbackQuery, _):
             _,
             True if CallbackQuery.from_user.id in SUDOERS else False,
         )
-        med = InputMediaPhoto(
+        med = InputMediaAnimation(
             media=config.GLOBAL_IMG_URL,
             caption=_["gstats_10"].format(config.MUSIC_BOT_NAME),
         )
@@ -454,7 +454,7 @@ async def back_buttons(client, CallbackQuery, _):
             _,
             True if CallbackQuery.from_user.id in SUDOERS else False,
         )
-        med = InputMediaPhoto(
+        med = InputMediaAnimation(
             media=config.STATS_IMG_URL,
             caption=_["gstats_11"].format(config.MUSIC_BOT_NAME),
         )
