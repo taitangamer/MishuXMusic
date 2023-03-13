@@ -6,7 +6,7 @@ import psutil
 from pyrogram import __version__ as pyrover
 from pyrogram import filters
 from pyrogram.errors import MessageIdInvalid
-from pyrogram.types import CallbackQuery, InputMediaAnimation, Message
+from pyrogram.types import CallbackQuery, InputMediaAnimation, Message, InputMediaPhoto
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
@@ -47,8 +47,8 @@ async def stats_global(client, message: Message, _):
     upl = stats_buttons(
         _, True if message.from_user.id in SUDOERS else False
     )
-    await message.reply_photo(
-        photo=config.STATS_IMG_URL,
+    await message.reply_animation(
+        animation=config.STATS_IMG_URL,
         caption=_["gstats_11"].format(config.MUSIC_BOT_NAME),
         reply_markup=upl,
     )
