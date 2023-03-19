@@ -23,7 +23,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "http://github.com/SUMIT0481/MishuXMusic")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
-GIT_TOKEN = getenv("GIT_TOKEN", "http://github.com/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")
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ogvenomeditz")
 SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/og_family_group")
