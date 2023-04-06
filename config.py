@@ -14,19 +14,19 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴛᴀɪᴛᴀɴ ✘ ᴍᴜsɪᴄ")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "5920122177").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "5418102507").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/SUMIT0481/MishuXMusic")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/taitangamer/MishuXMusic")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ogvenomeditz")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/og_family_group")
+SUPPORT_CHANNEL = getenv("SUPPORT_GROUP2", "https://t.me/AlonesHeaven")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Dangerous_fighter_clan_1")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
@@ -76,11 +76,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/d10c3579c91a40c471b58.mp4")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/5ef1159905611cde5cee9.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://te.legra.ph/file/73747693b553b6e8e5f21.mp4",
+    "https://te.legra.ph/file/5ef1159905611cde5cee9.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/8620c97102de9537c0f6a.jpg"
@@ -89,9 +89,9 @@ GLOBAL_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
 
 STATS_IMG_URL = "https://te.legra.ph/file/dd73f5a02e45465f2c509.mp4"
 
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/5ef1159905611cde5cee9.jpg"
 
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/5ef1159905611cde5cee9.jpg"
 
 STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
 
